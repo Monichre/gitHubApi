@@ -1,0 +1,57 @@
+/*
+Project Name: GitHub
+Client: Epicodus
+Author: Liam Ellis
+Developer @Epicodus in Portland
+*/
+/******************************************
+/* SETUP
+/*******************************************/
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box;
+  /* Firexfox */
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box;
+  /* IE */ }
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+.main {
+  width: 100%;
+  height: 100%; }
+
+.clear {
+  clear: both; }
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px;
+  /* note the padding around a right floated image */ }
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0;
+  /* note the padding around a left floated image */ }
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+h1 {
+  text-align: center;
+  margin: auto; }
+
+.form {
+  margin: auto;
+  text-align: center;
+  display: block; }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic3R5bGUuY3NzIiwic291cmNlcyI6WyJzdHlsZS5zY3NzIl0sInNvdXJjZXNDb250ZW50IjpbIi8qXG5Qcm9qZWN0IE5hbWU6IEdpdEh1YlxuQ2xpZW50OiBFcGljb2R1c1xuQXV0aG9yOiBMaWFtIEVsbGlzXG5EZXZlbG9wZXIgQEVwaWNvZHVzIGluIFBvcnRsYW5kXG4qL1xuXG5cbi8qKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKipcbi8qIFNFVFVQXG4vKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKi9cblxuLyogQm94IE1vZGVsIEhhY2sgKi9cbioge1xuICAgICAtbW96LWJveC1zaXppbmc6IGJvcmRlci1ib3g7IC8qIEZpcmV4Zm94ICovXG4gICAgIC13ZWJraXQtYm94LXNpemluZzogYm9yZGVyLWJveDsgLyogU2FmYXJpL0Nocm9tZS9pT1MvQW5kcm9pZCAqL1xuICAgICBib3gtc2l6aW5nOiBib3JkZXItYm94OyAvKiBJRSAqL1xufVxuXG4vKiBDbGVhciBmaXggaGFjayAqL1xuLmNsZWFyZml4OmFmdGVyIHtcbiAgICAgY29udGVudDogXCIuXCI7XG4gICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgICBjbGVhcjogYm90aDtcbiAgICAgdmlzaWJpbGl0eTogaGlkZGVuO1xuICAgICBsaW5lLWhlaWdodDogMDtcbiAgICAgaGVpZ2h0OiAwO1xufVxuXG4ubWFpbiB7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDEwMCU7XG59XG5cbi5jbGVhciB7XG4gIGNsZWFyOiBib3RoO1xufVxuXG4uYWxpZ25yaWdodCB7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMCAwIDEwcHggMTBweDsgLyogbm90ZSB0aGUgcGFkZGluZyBhcm91bmQgYSByaWdodCBmbG9hdGVkIGltYWdlICovXG59XG5cbi5hbGlnbmxlZnQge1xuICBmbG9hdDogbGVmdDtcbiAgcGFkZGluZzogMCAxMHB4IDEwcHggMDsgLyogbm90ZSB0aGUgcGFkZGluZyBhcm91bmQgYSBsZWZ0IGZsb2F0ZWQgaW1hZ2UgKi9cbn1cblxuLyoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKlxuLyogQkFTRSBTVFlMRVNcbi8qKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqL1xuXG5oMSB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgbWFyZ2luOiBhdXRvO1xufVxuXG4uZm9ybSB7XG4gIG1hcmdpbjogYXV0bztcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBkaXNwbGF5OiBibG9jaztcbn0iXSwibWFwcGluZ3MiOiJBQUFBOzs7OztFQUtFO0FBR0Y7OzZDQUU2QztBQUU3QyxvQkFBb0I7QUFDcEIsQUFBQSxDQUFDLENBQUM7RUFDRyxlQUFlLEVBQUUsVUFBVztFQUFFLGNBQWM7RUFDNUMsa0JBQWtCLEVBQUUsVUFBVztFQUFFLCtCQUErQjtFQUNoRSxVQUFVLEVBQUUsVUFBVztFQUFFLFFBQVEsRUFDckM7O0FBRUQsb0JBQW9CO0FBQ3BCLEFBQVMsU0FBQSxBQUFBLE1BQU0sQ0FBQztFQUNYLE9BQU8sRUFBRSxHQUFJO0VBQ2IsT0FBTyxFQUFFLEtBQU07RUFDZixLQUFLLEVBQUUsSUFBSztFQUNaLFVBQVUsRUFBRSxNQUFPO0VBQ25CLFdBQVcsRUFBRSxDQUFFO0VBQ2YsTUFBTSxFQUFFLENBQUUsR0FDZDs7QUFFRCxBQUFBLEtBQUssQ0FBQztFQUNKLEtBQUssRUFBRSxJQUFLO0VBQ1osTUFBTSxFQUFFLElBQUssR0FDZDs7QUFFRCxBQUFBLE1BQU0sQ0FBQztFQUNMLEtBQUssRUFBRSxJQUFLLEdBQ2I7O0FBRUQsQUFBQSxXQUFXLENBQUM7RUFDVixLQUFLLEVBQUUsS0FBTTtFQUNiLE9BQU8sRUFBRSxhQUFjO0VBQUUsbURBQW1ELEVBQzdFOztBQUVELEFBQUEsVUFBVSxDQUFDO0VBQ1QsS0FBSyxFQUFFLElBQUs7RUFDWixPQUFPLEVBQUUsYUFBYztFQUFFLGtEQUFrRCxFQUM1RTs7QUFFRDs7NkNBRTZDO0FBRTdDLEFBQUEsRUFBRSxDQUFDO0VBQ0QsVUFBVSxFQUFFLE1BQU87RUFDbkIsTUFBTSxFQUFFLElBQUssR0FDZDs7QUFFRCxBQUFBLEtBQUssQ0FBQztFQUNKLE1BQU0sRUFBRSxJQUFLO0VBQ2IsVUFBVSxFQUFFLE1BQU87RUFDbkIsT0FBTyxFQUFFLEtBQU0sR0FDaEIiLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIvc291cmNlLyJ9 */
