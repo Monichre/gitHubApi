@@ -49,13 +49,24 @@ Developer @Epicodus in Portland
 /******************************************
 /* BASE STYLES
 /*******************************************/
+
+.container {
+  margin: auto;
+  width: 90%;
+}
 .profile {
   float: left;
+  width: 33.333%;
 }
-
 h1 {
   text-align: center;
   margin: auto;
+}
+
+.profile h1 {
+  text-align: left;
+  margin: auto;
+
   
 }
 
@@ -65,20 +76,21 @@ h1 {
   display: block;
 }
 
-.photo {
+.photo img {
   
   width: 300px;
   height: 300px;
+  border-radius: 50%;
+  
 }
 
 .repositories {
-  
+  padding-top: 5%;
+  clear: both;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  /*justify-content: space-around;*/
-  
-  
+  justify-content: space-around;
 }
 
 .repo {
